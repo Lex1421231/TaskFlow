@@ -27,6 +27,61 @@ body {
     min-height: 100vh;
 }
 
+h2 {
+    font-size: 21px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 5px;
+    background: #f4f4f4;
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    background: #ffffff00;
+    border-color: #d8dce0;
+    border: 1px solid;
+    border-radius: 5px;
+    min-height: 50px;
+    max-width: 508px;
+    min-width: 300px;
+    align-items: center;
+    font-size: 18px;
+}
+
+#taskInput {
+    color: #212529;
+    opacity: 0.4;
+    height: 50px;
+    width: 300px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.btn {
+    color: #d8dce0;
+    background-color: #3C3C3C;
+    line-height: 10px;
+    height: 50px;
+    border-radius: 5px;
+    text-align: center;
+    width: 200px;
+    font-size: 21px;
+    cursor: pointer;
+}
+
+.btn-x {
+    border-radius: 50px;
+    color: #252525;
+    border-color: rgba(255, 255, 255, 0);
+    background: rgba(255, 255, 255, 0);
+    font-size: 32px;
+}
+
 .container {
     max-width: 1400px;
     margin: 0 auto;
@@ -44,6 +99,23 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.addmin {
+    display: flex;
+}
+
+.addmin-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background: #00000023;
+    height: 100vh;
+    max-width: 400px;
+    min-width: 320px;
+    margin-right: 50px;
+    padding-top: 50px;
 }
 
 .logo {
@@ -512,8 +584,9 @@ header {
         flex-direction: column;
         align-items: center;
     }
-    
-    .column, .add-column-btn {
+
+    .column,
+    .add-column-btn {
         min-width: 100%;
         max-width: 100%;
     }

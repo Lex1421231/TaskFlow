@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TaskFlow - Ваш менеджер задач</title>
     <link rel="stylesheet" href="styles/main.css">
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -19,13 +21,21 @@
         </div>
     </header>
 
-    <main class="board">
-        <div class="container">
-            <div class="columns-container" id="columnsContainer">
-                <!-- Колонки будут добавляться здесь через JavaScript -->
-            </div>
+    <section class="addmin">
+        <div class="addmin-inner">
+            <h2>Сотрудники:</h2>
+            <input type="text" id="taskInput" placeholder="Добавить сотрудника">
+            <button class="btn" onclick="addTask()">Добавить</button>
+            <ul id="taskList"></ul>
         </div>
-    </main>
+        <main class="board">
+            <div class="container">
+                <div class="columns-container" id="columnsContainer">
+                    <!-- Колонки будут добавляться здесь через JavaScript -->
+                </div>
+            </div>
+        </main>
+    </section>
 
     <!-- Модальное окно для добавления/редактирования задачи -->
     <div class="modal" id="taskModal">
@@ -61,7 +71,8 @@
                 </form>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-danger" id="deleteTaskBtn" style="display: none;">Удалить задачу</button>
+                <button type="button" class="btn btn-danger" id="deleteTaskBtn" style="display: none;">Удалить
+                    задачу</button>
                 <button type="button" class="btn" id="cancelTask">Отмена</button>
                 <button type="button" class="btn btn-success" id="saveTask">Сохранить</button>
             </div>
@@ -84,7 +95,8 @@
                 </form>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-danger" id="deleteColumn" style="display: none;">Удалить колонку</button>
+                <button type="button" class="btn btn-danger" id="deleteColumn" style="display: none;">Удалить
+                    колонку</button>
                 <button type="button" class="btn" id="cancelColumn">Отмена</button>
                 <button type="button" class="btn btn-success" id="saveColumn">Сохранить</button>
             </div>
@@ -116,5 +128,7 @@
     <script src="js/contextmenu.js"></script>
     <script src="js/app.js"></script>
     <script src="js/init.js"></script>
+    <script src="js/admin.js"></script>
 </body>
+
 </html>
